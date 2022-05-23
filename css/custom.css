@@ -1,0 +1,56 @@
+body, html
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+*{padding: 0;
+margin: 0;
+}
+    
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    display: flex;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+form input, form textarea{
+    outline: unset;
+    padding: 20px;
+    width: 300px;
+    border: 3px solid rgb(118, 118, 118);
+    border-radius: 50px;
+    text-align: center
+}
+
+card-body{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+btn{
+    padding:50px;
+}
+
+resultado{
+padding: 50px;
+
+}

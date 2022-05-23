@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="pt-br"">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Essa página foi criada para a empresa Infortronics avaliar meus conhecimento com alguma linguagem de programação."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/exercicio_1.js" defer></script>
+    <script src="js/FileSaver.js" defer></script>
+
+  <!-------CSS-------->
+    <link rel="stylesheet" href="css/main_1.css"/>  
+
+    <title>Teste Prático - Infortronics</title>
+  </head>
+<!-------HEADER-------->
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="navbar bg-light">
+          <div class="container">
+            <img src="./assets/Logo.webp" class="img-fluid">
+            <a class="navbar-brand"><center><b>Teste Prático<br>INFORTRONICS</b></center></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Exercícios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="/exercicio_1.html">Exercício 1</a></li>
+                      <li><a class="dropdown-item" href="/exercicio_2.html">Exercício 2</a></li>
+                      <li><a class="dropdown-item" href="/exercicio_3.html">Exercício 3</a></li>
+                      <li><a class="dropdown-item" href="/exercicio_4.html">Exercício 4</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+<!-------//HEADER-------->
+<!-------//QUESTÃO-------->
+    <header>
+      <h1>Exercício 1</h1>
+      <h2>Crie uma aplicação que permita a digitação de números e mostre esses números em tela de forma ordenada. Ou seja, desenvolver uma lógica que deverá permitir a inclusão de n números em qualquer sequência e em seguida exibi-los em ordem crescente.</h2>
+    </header>
+    <section>
+      <form action="">
+        <div>
+          <input type="text" placeholder="Digite o primeiro valor" name="valor_1" id="valor_1" onkeyup="recebervalor1" required>
+        </div>
+        <div>
+          <input type="text" placeholder="Digite o segundo valor" name="valor_2" id="valor_2" onkeyup="recebervalor2"required>
+        </div>
+        <div>
+          <input type="text" placeholder="Digite o terceiro valor" name="valor_3" id="valor_3" onkeyup="recebervalor3" required>
+        </div>
+        <div>
+          <button type="button" onclick="organizar()" name="ordenar" id="ordenar">Organizar</button>
+        </div>
+        <div>
+          <button onclick="salvar()">Salvar</button>
+        </div>
+        <p>Valores organizados <span id="resultado"></span></p>
+      </form>
+    </section>
+  </body> 
+</html>

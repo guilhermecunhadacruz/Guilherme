@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="pt-br"">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Essa pÃ¡gina foi criada para a empresa Infortronics avaliar meus conhecimento com alguma linguagem de programaÃ§Ã£o."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/exercicio_1.js" defer></script>
+
+  <!-------CSS-------->
+    <link rel="stylesheet" href="css/main_3.css"/>  
+
+    <title>Teste Prático - Infortronics</title>
+  </head>
+<!-------HEADER-------->
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="navbar bg-light">
+          <div class="container">
+            <img src="./assets/Logo.webp" class="img-fluid">
+            <a class="navbar-brand"><center><b>Teste Prático<br>INFORTRONICS</b></center></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Exercícios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                      <li><a class="dropdown-item" href="/exercicio_1.html">Exercício 1</a></li>
+                      <li><a class="dropdown-item" href="/exercicio_2.html">Exercício 2</a></li>
+                      <li><a class="dropdown-item" href="/exercicio_3.html">Exercício 3</a></li>
+                      <li><a class="dropdown-item" href="/exercicio_4.html">Exercício 4</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+<!-------//HEADER-------->
+<!-------//QUESTÃƒO-------->
+    <header>
+      <h1>Exercício 3</h1>
+      <h2>Faça uma aplicação que verifique se um valor é perfeito ou não. Um valor é dito perfeito quando ele é igual a soma dos seus divisores, exceto ele próprio. (Ex: 6 é perfeito, 6 = 1 + 2 + 3, que são seus divisores).</h2>
+      <div class="card">
+        <div class="card-header">
+          Código feito em linguagem C
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Valor Perfeito</h5>
+          <p class="card-text">
+            <p>#include &lt;stdio.h&gt;<br />#include &lt;stdlib.h&gt;<br />#include &lt;locale.h&gt;//Biblioteca de caracteres especiais</p>
+            <p>&nbsp;</p>
+            <p>int main()<br />{<br />setlocale(LC_ALL, "");//Biblioteca de caracteres especiais</p>
+            <p>int n, soma= 0, i;</p>
+            <p>printf("Digite um n&uacute;mero maior que 0: ");<br />scanf("%d", &amp;n);</p>
+            <p>for(i = 1; i &lt; n; i++)<br />{<br />if(n % i == 0)<br />{<br />soma += i;<br />}<br />}</p>
+            <p>if (soma == n)<br />{<br />printf("\n\nO n&uacute;mero %d &eacute; perfeito!!\n\n", n);<br />}<br />else<br />{<br />printf("\n\nO n&uacute;mero %d n&atilde;o &eacute; perfeito!!\n\n", n);<br />}</p>
+            <p>return (0);</p>
+            <p>}</p>
+            <p>&nbsp;</p>
+          <center>
+            <a href="./downloads/Exercicio 3.rar" class="btn btn-primary" type="application/zip">Download do Código</a>
+          </center>
+        </div>
+      </div>
+      
+    </header>
+  </body> 
+</html>
